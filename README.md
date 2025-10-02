@@ -15,20 +15,22 @@ This project is a Proof of Concept (PoC) demonstrating Account Abstraction using
 *   **TypeScript**: Strongly typed programming language that builds on JavaScript.
 *   **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 *   **Viem**: Libraries for interacting with the Ethereum blockchain.
+---
 
 ### API Routes
 
 The application integrates with the Notus API to provide the following functionalities:
 
-*   **GET** `/api/v1/wallets/{accountAbstraction}/portfolio`: Retrieves the portfolio of a wallet, including token balances. [x]
-*   **POST** `/api/v1/wallets/register`: Registers a new wallet. [x]
-*   **POST** `/api/v1/crypto/transfer`: Creates a user operation to transfer tokens. []
-*   **POST** `/api/v1/crypto/swap`: Creates a user operation to swap tokens. [x]
-*   **POST** `/api/v1/crypto/execute-user-op`: Executes a user operation. [x]
-*   **GET** `/api/v1/liquidity/amounts`: Fetches the amounts of tokens in a liquidity pool. [x]
-*   **POST** `/api/v1/liquidity/create`: Creates a new liquidity pool. []
-*   **GET** `/api/v1/wallets/{accountAbstraction}/history`: Fetches the transaction history of a wallet. []
+-   **GET** `/api/v1/wallets/{accountAbstraction}/portfolio`: Retrieves the portfolio of a wallet, including token balances. [**OK**]
+*   **POST** `/api/v1/wallets/register`: Registers a new wallet. [**OK**]
+*   **POST** `/api/v1/crypto/transfer`: Creates a user operation to transfer tokens. [*NOT TESTED*]
+*   **POST** `/api/v1/crypto/swap`: Creates a user operation to swap tokens. [**OK**]
+*   **POST** `/api/v1/crypto/execute-user-op`: Executes a user operation. [**OK**]
+*   **GET** `/api/v1/liquidity/amounts`: Fetches the amounts of tokens in a liquidity pool. [**OK**]
+*   **POST** `/api/v1/liquidity/create`: Creates a new liquidity pool. [*NOT TESTED*]
+*   **GET** `/api/v1/wallets/{accountAbstraction}/history`: Fetches the transaction history of a wallet. [*BUG*]
 
+---
 ### Getting Started
 
 Follow these steps to set up and run the project locally:
@@ -52,7 +54,7 @@ Follow these steps to set up and run the project locally:
 
 3.  **Set up environment variables:**
 
-    Create a `.env.local` file in the root of the project and add your Web3Auth client ID and any other necessary environment variables.
+    Create a `.env` file in the root of the project and add your Web3Auth client ID and any other necessary environment variables.
 
     ```
     NEXT_PUBLIC_WEB3AUTH_CLIENT_ID="YOUR_WEB3AUTH_CLIENT_ID"
@@ -62,8 +64,11 @@ Follow these steps to set up and run the project locally:
     ```
 
     *(You can obtain a Web3Auth Client ID from the [Web3Auth Dashboard](https://dashboard.web3auth.io/).)*
+
     *(You can obtain a Notus API Key from the [Notus Dashboard](https://dashboard.notus.team/).)*
 
+    
+    
 4.  **Run the development server:**
 
     ```bash
@@ -71,5 +76,7 @@ Follow these steps to set up and run the project locally:
     # or
     yarn dev
     ```
+---
+### Usage
 
 Check the project's [demo](https://notus-dx.vercel.app/)
