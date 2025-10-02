@@ -66,6 +66,7 @@ export default function ConnectWallet() {
   if (registeredWallet) {
     console.log("Wallet already registered:", registeredWallet.walletAddress);
     setAccountAbstraction(registeredWallet.accountAbstraction);
+    console.log("ConnectWallet: setAccountAbstraction (registered wallet) to:", registeredWallet.accountAbstraction);
     return;
   }
 
@@ -101,6 +102,7 @@ export default function ConnectWallet() {
     const data = await res.json();
     console.log("Smart wallet address data:", data);
     setAccountAbstraction(data.wallet.accountAbstraction);
+    console.log("ConnectWallet: setAccountAbstraction (newly registered/fetched) to:", data.wallet.accountAbstraction);
   }, [externallyOwnedAccount]);
 
   useEffect(() => {
