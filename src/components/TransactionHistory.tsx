@@ -51,6 +51,7 @@ export default function TransactionHistory({
   const [error, setError] = useState<string | null>(null);
 
   const fetchHistory = useCallback(async () => {
+    console.log("fetchHistory called for accountAbstraction:", accountAbstraction);
     if (!accountAbstraction) return;
     setLoading(true);
     setError(null);
@@ -102,6 +103,7 @@ export default function TransactionHistory({
   }, [accountAbstraction, types, status, chains, chainInId, chainOutId, userOperationHash, transactionHash, createdAtLatest, createdAtOldest, metadataKey, metadataValue]);
 
   useEffect(() => {
+    console.log("TransactionHistory useEffect triggered. accountAbstraction:", accountAbstraction);
     if (accountAbstraction) {
       fetchHistory();
     }
