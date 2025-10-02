@@ -274,7 +274,7 @@ export default function Swap({ account, accountAbstraction, externallyOwnedAccou
             </select>
           </div>
           <div className="mt-3 p-3 bg-gray-900 rounded-lg">
-            <p className="text-gray-500 text-sm">You'll receive</p>
+            <p className="text-gray-500 text-sm">You&apos;ll receive</p>
             <p className="text-2xl font-semibold text-gray-400">-</p>
           </div>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import { WalletClient } from "viem";
 
 type Transaction = {
   id: string;
@@ -15,7 +16,9 @@ type Transaction = {
 };
 
 type TransactionHistoryProps = {
+  account: WalletClient | null;
   accountAbstraction: string;
+  externallyOwnedAccount: string;
   types?: string[];
   status?: string[];
   chains?: string[];

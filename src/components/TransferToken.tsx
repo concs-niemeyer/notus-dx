@@ -196,7 +196,7 @@ export default function TransferToken({
               </svg>
               <div className="text-sm text-blue-200">
                 <p className="font-semibold mb-1">Transfer Summary</p>
-                <p>You're sending <span className="font-bold text-white">{amount} USDC</span> on Polygon network.</p>
+                <p>You&apos;re sending <span className="font-bold text-white">{amount} USDC</span> on Polygon network.</p>
                 <p className="text-xs text-blue-300 mt-1">Gas fees will be deducted from the transfer amount.</p>
               </div>
             </div>
