@@ -1,5 +1,7 @@
 "use client";
-
+// CRIAR OUTRA LÓGICA PARA RENDERIZAR AS TRANSAÇÕES.
+// BUG: LOOP NO CARREGAMENTO ESTÁ SOBRECARREGANDO AS REQUISIÇÕES PARA API.
+ 
 import { useEffect, useState, useCallback } from "react";
 import { WalletClient } from "viem";
 
@@ -36,7 +38,7 @@ export default function TransactionHistory({
   accountAbstraction,
   types = ["SWAP", "CROSS_SWAP"],
   status = ["COMPLETED", "FAILED"],
-  chains = ["42161", "43114", "137"],
+  chains = ["137"],
   chainInId,
   chainOutId,
   userOperationHash,

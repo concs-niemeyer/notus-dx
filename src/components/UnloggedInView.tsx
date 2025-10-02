@@ -25,7 +25,7 @@ export default function UnloggedInView({ login, isInitializing }: UnloggedInView
         <div className="flex flex-col items-center justify-center">
           <button
             onClick={login}
-            className="w-full flex justify-center py-3 px-4 border rounded-md shadow-sm text-lg font-medium disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 bg-neon-yellow text-black border-white hover:bg-ocher-yellow"
+            className="w-full flex justify-center py-3 px-4 border rounded-md shadow-sm text-lg font-medium disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200 bg-neon-yellow text-white border-white hover:bg-ocher-yellow"
             style={{
               boxShadow: '0 4px 6px -1px rgba(255, 214, 10, 0.1), 0 2px 4px -2px rgba(255, 214, 10, 0.1)', // neon-yellow shadow
             }}
