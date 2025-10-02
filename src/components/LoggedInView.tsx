@@ -6,7 +6,7 @@ import LiquidityPools from "./LiquidityPools";
 import Portfolio from "./Portfolio";
 import Swap from "./Swap";
 import TransferToken from "./TransferToken";
-import TransactionHistory from "./TransactionHistory";
+// import TransactionHistory from "./TransactionHistory";
 
 interface LoggedInViewProps {
   logout: () => void;
@@ -44,7 +44,7 @@ export default function LoggedInView({ logout, account, accountAbstraction, exte
       {accountAbstraction && (
         <>
           <div className="text-center my-6">
-            <h1 className="text-3xl font-bold text-white">Dashboard</h1>
+            <h1 className="text-3xl font-bold text-white">Notus DX - Trilha B & C</h1>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
             <Portfolio accountAbstraction={accountAbstraction} />
@@ -63,11 +63,11 @@ export default function LoggedInView({ logout, account, accountAbstraction, exte
               accountAbstraction={accountAbstraction}
               externallyOwnedAccount={externallyOwnedAccount}
             />
-            <TransactionHistory
+            {/* <TransactionHistory
               account={account}
               accountAbstraction={accountAbstraction}
               externallyOwnedAccount={externallyOwnedAccount}
-            />
+            /> */}
           </div>
         </>
       )}
