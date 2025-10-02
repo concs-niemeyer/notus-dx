@@ -20,14 +20,14 @@ This project is a Proof of Concept (PoC) demonstrating Account Abstraction using
 
 The application integrates with the Notus API to provide the following functionalities:
 
-*   **GET** `/api/v1/wallets/{accountAbstraction}/portfolio`: Retrieves the portfolio of a wallet, including token balances. ✅
-*   **POST** `/api/v1/wallets/register`: Registers a new wallet. ✅
-*   **POST** `/api/v1/crypto/transfer`: Creates a user operation to transfer tokens. ✅
-*   **POST** `/api/v1/crypto/swap`: Creates a user operation to swap tokens. ✅
-*   **POST** `/api/v1/crypto/execute-user-op`: Executes a user operation. ✅
-*   **GET** `/api/v1/liquidity/amounts`: Fetches the amounts of tokens in a liquidity pool. ✅
-*   **POST** `/api/v1/liquidity/create`: Creates a new liquidity pool. ⁉️
-*   **GET** `/api/v1/wallets/{accountAbstraction}/history`: Fetches the transaction history of a wallet. ⁉️
+*   **GET** `/api/v1/wallets/{accountAbstraction}/portfolio`: Retrieves the portfolio of a wallet, including token balances. [x]
+*   **POST** `/api/v1/wallets/register`: Registers a new wallet. [x]
+*   **POST** `/api/v1/crypto/transfer`: Creates a user operation to transfer tokens. []
+*   **POST** `/api/v1/crypto/swap`: Creates a user operation to swap tokens. [x]
+*   **POST** `/api/v1/crypto/execute-user-op`: Executes a user operation. [x]
+*   **GET** `/api/v1/liquidity/amounts`: Fetches the amounts of tokens in a liquidity pool. [x]
+*   **POST** `/api/v1/liquidity/create`: Creates a new liquidity pool. []
+*   **GET** `/api/v1/wallets/{accountAbstraction}/history`: Fetches the transaction history of a wallet. []
 
 ### Getting Started
 
