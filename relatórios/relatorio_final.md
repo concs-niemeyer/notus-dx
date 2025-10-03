@@ -32,7 +32,9 @@ https://www.linkedin.com/feed/update/urn:li:activity:7379970249791623168/
 ### **1. Qual trilha você testou?**
 
 ( ) Trilha A – Smart Wallet, KYC, Fiat, Portfolio, History
+
 (X) Trilha B – Smart Wallet, Swaps, Transfer, Portfolio, History
+
 (X) Trilha C – Smart Wallet, Liquidity Pools, Portfolio, History
 
 ---
@@ -92,7 +94,7 @@ O fluxo de registro de carteira (`ConnectWallet.tsx`) possui uma lógica de fall
 *   **A documentação foi suficiente? 4/5**
     *   No geral foi útil, mas continha um erro crítico no exemplo de código do `EthereumPrivateKeyProvider` (parâmetro `currentChain` incorreto), que impedia o uso direto da funcionalidade e exigia depuração por parte do desenvolvedor.
 *   **As mensagens de erro ajudaram? 4/5**
-    *   O erro de assinatura (Bug 1) poderia ser abstraído pela API Notus para fornecer uma resposta mais amigável ao desenvolvedor.
+    *   O erro de assinatura (Bug 2) poderia ser abstraído pela API Notus para fornecer uma resposta mais amigável ao desenvolvedor.
 *   **O fluxo fez sentido? 5/5**
     *   O fluxo geral de criar uma operação (transfer, swap) para obter uma `quoteId` e depois executá-la com `/crypto/execute-user-op` é consistente e fez sentido.
 *   **O tempo de resposta era razoável? 5/5**
@@ -102,7 +104,7 @@ O fluxo de registro de carteira (`ConnectWallet.tsx`) possui uma lógica de fall
 
 ### **6. Alguma funcionalidade estava ausente ou incompleta?**
 
-O teste completo do fluxo de transferência não foi concluído na sessão de teste original (`teste_create_transfer.md`) devido ao esgotamento da cota da API, o que deixou a validação da execução final incompleta nesse teste específico.
+Não, nenhuma.
 
 ---
 
