@@ -6,19 +6,24 @@
 
 ## Dados do Participante
 
-**Nome:** (A preencher)
+**Nome:**
+Conrado Araujo Limeira de Niemeyer
 
-**Email:** (A preencher)
+**Email:**
+conrado.raizen@gmail.com
 
-**Ferramentas utilizada:** Next.js, Postman, `viem`, `@web3auth/modal`
+**Ferramentas utilizada:**
+Next.js, Postman, Viem, Web3Auth
 
-**Link do repositório:** (A preencher)
+**Link do repositório:**
+https://github.com/concs-niemeyer/notus-dx
 
-**Link do post público:** (A preencher)
+**Link do post público:**
+https://www.linkedin.com/feed/update/urn:li:activity:7379970249791623168/
 
-**Data de início:** (A preencher)
+**Data de início:** 22/09/2025
 
-**Data de conclusão:** (A preencher)
+**Data de conclusão:** 03/10/2025
 
 ---
 
