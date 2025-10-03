@@ -21,13 +21,15 @@ This project is a Proof of Concept (PoC) demonstrating Account Abstraction using
 
 The application integrates with the Notus API to provide the following functionalities:
 
--   **GET** `/api/v1/wallets/{accountAbstraction}/portfolio`: Retrieves the portfolio of a wallet, including token balances. [**OK**]
+*   **GET** `/api/v1/wallets/`: Retrieves the all the wallets registered in the Notus platform by project [**OK**]
+
+*   **GET** `/api/v1/wallets/{accountAbstraction}/portfolio`: Retrieves the portfolio of a wallet, including token balances. [**OK**]
 *   **POST** `/api/v1/wallets/register`: Registers a new wallet. [**OK**]
-*   **POST** `/api/v1/crypto/transfer`: Creates a user operation to transfer tokens. [*NOT TESTED*]
 *   **POST** `/api/v1/crypto/swap`: Creates a user operation to swap tokens. [**OK**]
 *   **POST** `/api/v1/crypto/execute-user-op`: Executes a user operation. [**OK**]
 *   **GET** `/api/v1/liquidity/amounts`: Fetches the amounts of tokens in a liquidity pool. [**OK**]
 *   **POST** `/api/v1/liquidity/create`: Creates a new liquidity pool. [*NOT TESTED*]
+*   **POST** `/api/v1/crypto/transfer`: Creates a user operation to transfer tokens. [*NOT TESTED*]
 *   **GET** `/api/v1/wallets/{accountAbstraction}/history`: Fetches the transaction history of a wallet. [*BUG*]
 
 ---
@@ -77,6 +79,3 @@ Follow these steps to set up and run the project locally:
     yarn dev
     ```
 ---
-### Usage
-
-Check the project's [demo](https://notus-dx.vercel.app/)
